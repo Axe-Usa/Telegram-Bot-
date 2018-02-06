@@ -73,7 +73,12 @@ namespace TelegramTools
           }
           foreach (object list in (await Program.client.SendRequestAsync<TLImportedContacts>((TLMethod) requestImportContacts)).users.lists)
           {
-            // ISSUE: reference to a compiler-generated field
+            
+           }
+        }
+      }
+      /*
+      // ISSUE: reference to a compiler-generated field
             if (MainForm.\u003C\u003Eo__1.\u003C\u003Ep__3 == null)
             {
               // ISSUE: reference to a compiler-generated field
@@ -168,8 +173,9 @@ namespace TelegramTools
           this.progressBar1.Enabled = false;
           this.progressBar1.Value = 0;
           int num5 = (int) MessageBox.Show("Sent!", "Success");
-        }
-      }
+          
+          */
+      
       catch (Exception ex)
       {
         int num = (int) MessageBox.Show(string.Format("Something went wrong. Exception: {0}", (object) ex.ToString()), "Error");
